@@ -1,0 +1,40 @@
+{
+  "name": "spark-cli",
+  "version": "1.0.0",
+  "description": "An easy way to start a Vue, React project",
+  "type": "module",
+  "license": "MIT",
+  "author": "jefferyXZF",
+  "bin": {
+    "create-spark": "index.js",
+    "csk": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.4",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "unbuild": "^1.2.1"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JefferyXZF/spark-cli.git"
+  },
+  "homepage": "https://github.com/JefferyXZF/spark-cli#readme"
+}
